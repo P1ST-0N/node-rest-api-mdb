@@ -23,7 +23,8 @@ mongoose
 
 const app = express();
 
-app.use(morgan("tiny"));
+app.use(morgan("dev"));
+
 app.use(cors());
 app.use(express.json());
 
