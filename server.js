@@ -1,11 +1,18 @@
 import mongoose from "mongoose";
 import "dotenv/config";
 
-const DB_URI = process.env.DB_URI;
+// import app from "./app";
+
+const { DB_HOST, PORT = 3000 } = process.env.DB_HOST;
 
 async function run() {
   try {
-    await mongoose.connect(DB_URI);
+    await mongoose.connect(DB_HOST);
+    // .then(() => {
+    //   app.listen(PORT, () => {
+    //     console.log("Database connection successfully");
+    //   });
+    // });
 
     console.log("Database connection successfully");
   } finally {
