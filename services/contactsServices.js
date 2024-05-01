@@ -3,10 +3,6 @@ import { randomUUID } from "crypto";
 import { readFile, writeFile } from "fs/promises";
 import path from "path";
 
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
-
-// const contactsPath = path.resolve(__dirname, "../db/contacts.json");
 const contactsPath = path.join("db", "contacts.json");
 
 async function listContacts() {
@@ -45,22 +41,6 @@ async function removeContact(contactId) {
     contacts.find((contact) => contact.id === contactId) || null;
   return removedContact;
 }
-
-// async function updateContactById(contactId, updatedFields) {
-//   const contacts = await listContacts();
-//   const index = contacts.findIndex((contact) => contact.id === contactId);
-
-//   if (index === -1) {
-//     return null;
-//   }
-
-//   const updatedContact = { ...contacts[index], ...updatedFields };
-//   contacts[index] = updatedContact;
-
-//   await writeFile(contactsPath, JSON.stringify(contacts, null, 2));
-
-//   return updatedContact;
-// }
 
 async function updateContactById(contactId, data) {
   const contacts = await listContacts();
