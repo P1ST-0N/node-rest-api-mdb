@@ -76,7 +76,7 @@ export const updateStatusContact = async (req, res, next) => {
     if (!result) {
       throw HttpError(404, "Not found");
     }
-    res.status(200).json({ result, message: "Status updated Success" });
+    res.status(200).json({ result, message: "Status contact updated Success" });
   } catch (error) {
     next(error);
   }
