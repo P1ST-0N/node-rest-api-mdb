@@ -53,30 +53,9 @@
     "phone": "777"
   },
   {
-    "id": "43d59080-ea44-491e-b588-3ba5c72a5a70",
-    "name": "test",
-    "email": "123@qwe.com",
-    "phone": "777"
-  },
-  {
-    "id": "3aec414d-563b-4689-ad52-56a4fb701248",
-    "email": "123@qwe.com",
-    "phone": "777"
-  },
-  {
     "id": "b4a6675c-701e-46fa-85c1-f7c26cb8f11b",
     "phone": "00000",
     "name": "test11",
     "email": "123@qwe.com"
-  },
-  {
-    "id": "bb5c41cb-b589-4a0c-ba86-3a79ddeb10e4",
-    "name": "test",
-    "email": "123@qwe.com",
-    "phone": "123"
-  },
-  {
-    "id": "91adb9f4-5e0e-462e-b3cc-3dd7d5850195",
-    "name": "test11"
   }
 ]
