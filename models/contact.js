@@ -17,6 +17,10 @@ const contactSchema = new Schema(
       type: Boolean,
       default: false,
     },
+    owner: {
+      type: Schema.Types.ObjectId,
+      res: "user",
+    },
   },
   { versionKey: false, timestamps: true }
 );
